@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Write</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+</head>
+<body class="body-dark-theme">
+        <!-- Header & Navbar  -->
+    <header class="header">
+        <nav class="nav container">
+            <div class="logoArea">
+                <img src="./logo.png" class="logoImg" alt="logo">
+                <h2 class="logoText">UDAY</h2>
+            </div>
+            <ul class="navList">
+                <li>
+                    <a href="./index.html" class="navLink">Home</a>
+                </li>
+                <li>
+                    <a href="./signin.html" class="navLink">Login</a>
+                </li>
+                <li>
+                    <a href="./write.html" class="navLink">Write</a>
+                </li>
+                <li>
+                    <a href="#" class="navLink"><i  id="theme-change" class="uil uil-sun buttonIcon"></i></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h1 class="title">Write Blog</h1>
+        <section class="section  writeContainer">
+            <div class="writeLeft">
+                <div class="inputBox">
+                    <label for="" class="writeSubtitle">Title</label>
+                    <input type="text" class="input" placeholder="Title of the Blog ">
+                </div>
+                <div class="inputBox">
+                    <label class="writeSubtitle">MarkDown</label>
+                    <textarea class="markdowninput"></textarea>
+                </div>
+                <div class="inputBox">
+                    <label for="" class="writeSubtitle">Tags</label>
+                    <input type="text" class="input" placeholder="tags">
+                </div>
+            </div>
+            <div class="writeRight">
+                <div class="inputBox">
+                    <label for="" class="writeSubtitle">Category</label>
+                    <select name="" class="input" id="" >
+                        <option value="NULL">select</option>
+                        <option value="c">C Language</option>
+                        <option value="python">Python</option>
+                        <option value="ds">Data Structures</option>
+                        <option value="cpp">C plus plus</option>
+                        <option value="algo">Algorithms</option>
+                        <option value="html">HTML</option>
+                        <option value="css">CSS</option>
+                    </select>
+                </div>
+                <div class="inputBox">
+                    <label class="writeSubtitle">View</label>
+                    <textarea class="markdowninput"></textarea>
+                </div>
+                <div class="inputBox">
+                    <label for="" class="writeSubtitle">Upload</label>
+                    <button type="button" class="input blogPost buttonText">Publish</button>
+                    <!-- <button type="button" class="input blogPost center" ><p class="loadig"><i class="tick uil uil-check-circle"></i> </p></button> -->
+                </div>
+                <div class="inputBox">
+                    <label for="" class="writeSubtitle">Upload</label>
+                    <button type="button" class="input blogPost center" ><p class="buttonText">Uploading...<i class="buttonIcon loading uil uil-spinner-alt"></i> </p></button>
+                </div>
+            </div>
+        </section>
+        <section class="section writeMobile">
+            <img src="./images/nope.svg" class="errorImg" alt="">
+            <h3 class="writeMobileText">Sorry! you can't write in Mobile</h3>
+        </section>
+    </div>
+</body>
+<script src="./main.js"></script>
+</html>
