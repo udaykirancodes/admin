@@ -27,3 +27,25 @@ themeChange.addEventListener('click',()=>{
         localStorage.setItem('theme','dark');
     }
 })
+
+
+
+// 
+
+let numbers = document.querySelectorAll('.cardHeartNumber'); 
+console.log( parseInt(numbers[0].innerHTML) + 1)
+// numbers.forEach(element => {
+//     element.addEventListener('click',()=>{
+//         console.log('clicked');
+//         let n = parseInt(element.innerText);
+//         element.innerHTML=n+1;
+//     })
+// })
+for(let i=0 ; i<numbers.length ; i++){
+    numbers[i].addEventListener('click',()=>{
+        console.log('clicked'); 
+        let element = numbers[i]
+        let n = parseInt(element.innerText);
+        numbers[i].innerHTML=n+1
+    })
+}
