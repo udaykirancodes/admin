@@ -571,9 +571,7 @@ body{
     height: 100%;
     width: 100%;
     border-radius: 10px;
-}
-.extrainfo{
-    display: none;
+    transition:  100ms ease-in-out ;
 }
 .landingPageExtra:hover > .extrainfo , .landingPageExtra:active > .extrainfo , .landingPageExtra:focus > .extrainfo{
     color: white;
@@ -586,6 +584,10 @@ body{
     border-radius: 10px; 
     flex-direction: column;
 }
+.extrainfo{
+    display: none;
+    transition: 100ms ease-in-out;
+}
 .develop{
     margin: 20px 0;
 }
@@ -597,14 +599,8 @@ body{
 @media all and (min-width:968px) {
     /* DESKTOP VIEW */
     .card{
-        /* max-height: max-content; */
         max-width: 45%;
     }
-    /* .landingpage .landingImgContainer{
-        max-width:70%;
-        margin: 20px 0;
-        position: relative;
-    } */
 }
 @media all and (max-width:768px) {
     /* MOBILE VIEW */

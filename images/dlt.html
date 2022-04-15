@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .center{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            align-items:center;
+            justify-content: center;
+            background-color: #fff;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .button{
+            background-color: hsl(200,100%,50%);
+            height: 2rem;
+            width: 7rem;
+            border-radius: 5px;
+            outline: none;
+            border: none;
+            color: white;
+            cursor: pointer;
+            transition: 100ms ease-in-out;
+            border: 1px solid #f2f333;
+        }
+        .button:hover{
+            background-color: white;
+            color: hsl(200,100%,50%);
+        }
+    </style>
+</head>
+<body>
+    <div class="center">
+        <button class="button">Click me</button>
+    </div>
+</body>
+</html>
